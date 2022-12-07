@@ -92,6 +92,30 @@ table{
   transform: translateY(4px);
 }
 
+
+#for{
+  float: right;
+}
+#logImg{
+  float: left;
+  size: 200px;
+  width: 600px;
+  height: 500px;
+
+}
+p{
+  font-size: small;
+}
+.button4{
+  size: 200px;
+  width: 200px;
+  height: 150px;
+}
+#cars{
+  width: 100%;
+}
+<!---->
+
 .container {
 	background-color: #fff;
 	border-radius: 5px;
@@ -101,13 +125,11 @@ table{
 	max-width: 100%;
   height: 500px;
 }
-
 .header {
 	border-bottom: 1px solid #ffffffdf;
 	background-color: #ffffff;
 	padding: 20px 40px;
 }
-
 .header h2 {
 	margin: 0;
 }
@@ -117,14 +139,15 @@ table{
 }
 
 .form-control {
-	margin-bottom: 10px;
-	padding-bottom: 20px;
+	margin-bottom: 50px;
+	padding-bottom: 100px;
 	position: relative;
+  margin-top: 0px;
+  padding-top: 0px;
 }
-
 .form-control label {
 	display: inline-block;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 .form-control input {
@@ -133,7 +156,7 @@ table{
 	display: block;
 	font-family: inherit;
 	font-size: 14px;
-	padding: 10px;
+	padding: 20px;
 	width: 100%;
 }
 
@@ -141,7 +164,6 @@ table{
 	outline: 0;
 	border-color: #777;
 }
-
 .form-control.success input {
 	border-color: #2ecc71;
 }
@@ -149,7 +171,6 @@ table{
 .form-control.error input {
 	border-color: #e74c3c;
 }
-
 .form-control i {
 	visibility: hidden;
 	position: absolute;
@@ -166,7 +187,6 @@ table{
 	color: #e74c3c;
 	visibility: visible;
 }
-
 .form-control small {
 	color: #e74c3c;
 	position: absolute;
@@ -191,26 +211,38 @@ table{
 	margin-top: 20px;
 	width: 100%;
 }
-#for{
-  float: right;
+#college{
+  padding-top:5px;
 }
-#logImg{
+#login{
+  padding-top: 50;
+}
+.studbtn{
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#demo{
+  padding-top: 20px;
+  margin-top: 30px;
   float: left;
-  size: 200px;
+}
+#logbtn{
+  float: left;
+  padding-left: 3cm;
+}
+#funImg{
+  float: right;
+  size: 20px;
   width: 600px;
-  height: 500px;
-
+  height: 400px;
+  
+  padding-left:80px;
 }
-p{
-  font-size: small;
+#r1{
+  height: 300px;
 }
-button4{
-  size: 200px;
-  width: 50px;
-  height: 100px;
-}
-
-
     </style>
     <title>Title</title>
     <!-- Required meta tags -->
@@ -260,7 +292,7 @@ button4{
 
     </div>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" id="cars" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -333,50 +365,91 @@ button4{
     </div>
     <div class="col-sm">
 
-    <div class="container" id="for">
-      <div class="header">
-          <h2 >Login</h2>
-      </div>
-      <form id="form" class="form">
-          <div class="form-control">
-              <label for="college">college<br></label>
-       <select name="college" id="college">
-         <option value="fcis">Computer and Information Science</option>
-         <option value="alsun">Alsun</option>
-          <option value="fm">Faculty of Medicine</option>
-          <option value="agr">Agriculture</option>
-         <option value="arts">Arts</option>
-         <option value="dent">Dentistry</option>
-         <option value="nursing">Nursing</option>
-         <option value="spec">Specific Education</option>
-       </select>
-          </div>
-          <div class="form-control">
-              <label for="username">Username</label>
-              <input type="text" placeholder="florinpop17" id="username" />
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-              <small>Error message</small>
-          </div>
-         
-          <div class="form-control">
-              <label for="username">Password</label>
-              <input type="password" placeholder="Password" id="password"/>
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-              <small>Error message</small>
-          </div>
-          <button onclick="checkInputs()" >Login</button>
-      </form>
+
+      <div class="container">
+        <div class="header">
+            <h2 >Login</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="college">college<br></label>
+         <select name="college" id="college">
+           <option value="fcis">Computer and Information Science</option>
+           <option value="alsun">Alsun</option>
+            <option value="fm">Faculty of Medicine</option>
+            <option value="agr">Agriculture</option>
+           <option value="arts">Arts</option>
+           <option value="dent">Dentistry</option>
+           <option value="nursing">Nursing</option>
+           <option value="spec">Specific Education</option>
+         </select>
+            </div>
+            <div class="form-control">
+                <label for="username" id="us">Username</label>
+                <input type="text" placeholder="florinpop17" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+           
+            <div class="form-control">
+                <label for="username" id="pas">Password</label>
+                <input type="password" placeholder="Password" id="password"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button onclick="checkInputs()" id="login">Login</button>
+        </form>
     </div>
+    
   </div>
 </div>
 </div>
 
+<div class="container">
+  <div class="row">
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <button type="button" onclick="displayPhrase()" class="button"  class="studbtn">Undergraduate Students</button>
+    </div>
+    <div class="col-sm">
+      <button type="button" onclick="displayPhrase2()" class="button"  class="studbtn">Postgraduate Student</button>
+      
+    </div>
+    <div class="col-sm">
+      <button type="button" onclick="displayPhrase3()" class="button"  class="studbtn">Staff Services</button>
+      
+    </div>
+   </div>
+   <div class="row" id="r1">
+   <span id="demo">Ain Shams University system provides<br> special services for undergraduate students.<br> These services can be used by logging in, such<br> as viewing the final result, business grades for the year,<br> registering courses, making a petition,<br> electronic payment of expenses, ...</span>
+   <img id="funImg" src="C:\Users\pc\Downloads\cheerful-young-womang (1).jpg" >
+  </div>
+   <div class="row">
+  </div>
+  <div id="logbtn"><button type="button" class="btn btn-warning" style="border-radius:3cm ;">Login</button></div>
+</div>
+      </div>
+    
+
+<script>
+  function displayPhrase()
+{
+    document.getElementById("demo").innerHTML = 'Ain Shams University system provides<br> special services for undergraduate students.<br> These services can be used by logging in, such<br> as viewing the final result, business grades for the year,<br> registering courses, making a petition,<br> electronic payment of expenses, ...';
+}
+function displayPhrase2()
+{
+    document.getElementById("demo").innerHTML = 'Ain Shams University system provides <br>special services for postgraduate students. <br>These services can be used by logging in, <br>such as displaying the final result, <br> grades of business of the year, ...';
+}
+
+function displayPhrase3()
+{
+    document.getElementById("demo").innerHTML = 'The Ain Shams University system provides <br> special services to the faculty and the supporting staff.<br> These services can be used by logging in<br> to their account.';
+}
 
 
-
-    <script>
       const button = document.getElementById('btn');
     button.addEventListener('mouseover', function () {
     button.style.left = `${Math.ceil(Math.random() * 90)}%`;
@@ -384,16 +457,12 @@ button4{
 });
 const form = document.getElementById('form');
 const username = document.getElementById('username');
-const email = document.getElementById('email');
 const password = document.getElementById('password');
-const password2 = document.getElementById('password2');
-
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	
 	checkInputs();
 });
-
 function checkInputs() {
 	// trim to remove the whitespaces
 	const usernameValue = username.value.trim();
@@ -407,13 +476,6 @@ function checkInputs() {
 		setSuccessFor(username);
 	}
 	
-	if(emailValue === '') {
-		setErrorFor(email, 'Email cannot be blank');
-	} else if (!isEmail(emailValue)) {
-		setErrorFor(email, 'Not a valid email');
-	} else {
-		setSuccessFor(email);
-	}
 	
 	if(passwordValue === '') {
 		setErrorFor(password, 'Password cannot be blank');
@@ -421,15 +483,7 @@ function checkInputs() {
 		setSuccessFor(password);
 	}
 	
-	if(password2Value === '') {
-		setErrorFor(password2, 'Password2 cannot be blank');
-	} else if(passwordValue !== password2Value) {
-		setErrorFor(password2, 'Passwords does not match');
-	} else{
-		setSuccessFor(password2);
-	}
 }
-
 function setErrorFor(input, message) {
 	const formControl = input.parentElement;
 	const small = formControl.querySelector('small');
@@ -441,13 +495,6 @@ function setSuccessFor(input) {
 	const formControl = input.parentElement;
 	formControl.className = 'form-control success';
 }
-	
-function isEmail(email) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-}
-
-
-// SOCIAL PANEL JS
 const floating_btn = document.querySelector('.floating-btn');
 const close_btn = document.querySelector('.close-btn');
 const social_panel_container = document.querySelector('.social-panel-container');
@@ -459,6 +506,9 @@ floating_btn.addEventListener('click', () => {
 close_btn.addEventListener('click', () => {
 	social_panel_container.classList.remove('visible')
 });
-    </script>
+
+
+
+</script>
   </body>
 </html>
