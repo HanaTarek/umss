@@ -55,24 +55,8 @@
   align-items: center;
 }
 
-.parent button {
-  background-color: #48abe0;
-  color:rgb(36, 53, 164);
-  border: none;
-  padding: 5px;
-  font-size: 31px;
-  height: 130px;
-  width: 130px;
-  box-shadow: 0 2px 4px darkslategray;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
 
-.parent button:active {
-  background-color: #48abe0;
-  box-shadow: 0 0 2px darkslategray;
-  transform: translateY(2px);
-}
+
 
 .parent button:not(:first-child) {
   margin-top: 10px;
@@ -85,10 +69,31 @@ table{
   width: 100%;
   height: 10cm;
 }
-button{
-  box-sizing: content-box;
-  size:5cm;
-  padding-left: 3cm;
+.button {
+  border-radius: 12px;
+  background-color:  rgb(24, 24, 122);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+.button:hover {background-color: #493fbe;
+  left: 200px;
+  top: 1cm;
+  transition:0s 0s;}
+
+.button:active {
+  background-color: #113072;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#logImg{
+  float: left;
+  size: 10cm;
 }
 
     </style>
@@ -173,25 +178,33 @@ button{
     </div class="parent">
     <table>
       <tr>
-        <th><button class="round-4">&#9729;</button></th>
-        <th><button class="round-4">&#9729;</button></th>
-        <th><button class="round-4">&#9729;</button></th>
-        <th><button class="round-4">&#9729;</button></th>
-        <th><button class="round-4">&#9729;</button></th>
+        <th><button class="button button4" id="btn">12px</button></th>
+        <th><button class="button button4">12px</button></th>
+        <th><button class="button button4">12px</button></th>
+        <th><button class="button button4">12px</button></th>
+        <th><button class="button button4">12px</button></th>
       </tr>
       <tr>
-        <td><button class="round-4">&#9729;</button></td>
-        <td><button class="round-4">&#9729;</button></td>
-        <td><button class="round-4">&#9729;</button></td>
-        <td><button class="round-4">&#9729;</button></td>
-        <td><button class="round-4">&#9729;</button></td>
+        <td><button class="button button4">12px</button></td>
+        <td><button class="button button4">12px</button></td>
+        <td><button class="button button4">12px</button></td>
+        <td><button class="button button4">12px</button></td>
+        <td><button class="button button4">12px</button></td>
         
       </tr>
     </table>
 
 
     <div>
+      <img id="logImg" src="C:\Users\pc\Downloads\loginback (1)-min.jpg" >
 
     </div>
+    <script>
+      const button = document.getElementById('btn');
+    button.addEventListener('mouseover', function () {
+    button.style.left = `${Math.ceil(Math.random() * 90)}%`;
+    button.style.top = `${Math.ceil(Math.random() * 90)}%`;
+});
+    </script>
   </body>
 </html>
